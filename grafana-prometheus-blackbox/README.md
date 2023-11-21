@@ -36,8 +36,30 @@
 #### Step 1 . First, we will update and upgrade our system and install Podman .   
 
     sudo apt update    
-
-![](36.png)       
+```
+Preview README.
+libmagickcore-6-h
+Learn more about Ub
+O upgraded, newi
+himanshu@1231-/Deak
+Hit:1 http://in.archive.ubuntu.com/ubuntu jammy InReleaserns a low failure response, th... Get:3 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+Hit:2 https://packages.cloud.google.com/apt kubernetes-xenial InRelease
+Hit:5 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease
+sudo apt i
+Get:6 http://in.archive.ubuntu.com/ubuntu jammy-proposed InRelease [270 kB]
+Get:7 http://in.archive.ubuntu.com/ubuntu jammy-proposed/universe amd64 Packages [59.7 kB]
+Get:8 http://in.archive.ubuntu.com/ubuntu jammy-proposed/universe 1386 Packages [29.6 kB]
+Get:9 http://in.archive.ubuntu.com/ubuntu jammy-proposed/universe Translation-en [26.8 kB]
+Get:10 http://in.archive.ubuntu.com/ubuntu jammy-proposed/main amd64 Packages [212 kB]
+Get:11 http://in.archive.ubuntu.com/ubuntu jammy-proposed/main i386 Packages [53.1 kB]
+Get:12 http://in.archive.ubuntu.com/ubuntu jammy-proposed/main Translation-en [46.0 kB] Fetched 926 kB in 4s (224 kB/s)36.png)
+Reading package lists... Done
+Building dependency tree... Done
+podman - v
+Reading state information... Done 37.png)
+All packages are up to date.
+```
 
 * **sudo:** This part of the command gives you temporary administrative privileges. It stands for "superuser do." It allows you to execute commands that require special permissions, like updating software.
 
@@ -47,9 +69,30 @@
 
 * **System Upgrade**
 
-    sudo apt upgrade
+```
+sudo apt upgrade 
+```
 
-![](37.png)   
+```
+Reading package lists... Done
+Building dependency treen.pod Done #### Step 7. If a website's URL returns a low failure response, th...
+Reading state information... Done Step 1. First, we will update and upgrade Calculating upgrade... Done our system and install Podman
+The following package was automatically installed and is no longer required:
+libgtkglext1
+39
+Use 'sudo apt autoremove' to remove it.
+Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
+libmagickcore-6.q16-dev python2.7-minimal libmagickwand-dev imagemagick
+libopenexr-dev libopenexr25 libpostproc55 libmagickcore-dev
+libmagickcore-6.q16-6-extra libavcodec58 libmagickwand-6.q16-6 libpython2.7
+libavutil56 imagemagick-6.q16 libswscale5 libmagickcore-6.q16-6
+libswresample3 imagemagick-6-common libmagickcore-6-arch-config ruby-rack
+libavformat58 python2.7-dev libpython2.7-dev libmagickwand-6-headers
+python2.7 libpython2.7-minimal libmagickwand-6.q16-dev
+libmagickcore-6-headers libpython2.7-stdlib libavfilter7
+Learn more about Ubuntu Pro at https://ubuntu.com/pro
+0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+```
 
 
 * **sudo:** This stands for "superuser do" and it's a way to tell the system that you want to perform the following command with administrator privileges. In other words, you're asking for permission to make changes to your system, and it's usually used for tasks that require special permissions.
@@ -60,7 +103,10 @@
 
 * **Install Podman** 
 
-    sudo apt install podman 
+```
+
+sudo apt install podman 
+```
 
 ![](38.png)    
 
@@ -74,10 +120,14 @@
 
 * **Check Version**
 
-    podman -v
+```
 
-![](39.png)
+podman -v
+```
+```
 
+podman version 3.4.4
+```
 
 * **Podman:** This is the name of the software or program you are using.
 
@@ -99,11 +149,17 @@
 
 * ```ls``` : **Check List**  
 
-![](10.png)  
+```
+
+himanshu@123:~/Desktop/grafana$ ls
+config.yml prometheus.yml
+```
 
 #### Step 3 . Paste code in prometheus.yml and config.yml file .     
 
-    sudo apt install vim
+```
+sudo apt install vim
+```
 
 ![](40.png)
 
@@ -118,7 +174,9 @@
 
 * **Check Version**
 
-    vim -v
+```
+vim -v
+```
 
 ![](41.png)      
 
@@ -129,7 +187,9 @@
 
 * **Write Prometheus File** 
 
-    vim prometheus.yml        
+```
+vim prometheus.yml
+```       
 
 When you open a **prometheus.yml** file in Vim, you need to first press **"i" (insert**) to start editing. Then you should enter the following code. After making the necessary changes according to your coding, you should press **"Esc" (escape)** and then type **":wq!" (write and quit forcefully)** to save the file and exit it. This will save your file and close it.
 
@@ -165,11 +225,13 @@ When you open a **prometheus.yml** file in Vim, you need to first press **"i" (i
             replacement: 192.168.1.113:9115  
 
 
-![](11.png)      
+```
+hostname -I
+```
+```
+192.168.1.8 172.17.0.1
+```
 
-    hostname -I
-
-![](42.png)
 
 * **starting ip**
 
@@ -178,10 +240,11 @@ https://www.google.com
 
 
 
-* **Write Configuration File** 
+* **Write Configuration File**
 
-    vim config.yml    
-
+```  
+vim config.yml    
+```
 
 When you open a **config.yml** file in Vim, you need to first press **"i" (insert**) to start editing. Then you should enter the following code. After making the necessary changes according to your coding, you should press **"Esc" (escape)** and then type **":wq!" (write and quit forcefully)** to save the file and exit it. This will save your file and close it.
 
@@ -239,19 +302,11 @@ When you open a **config.yml** file in Vim, you need to first press **"i" (inser
           ttl: 5      
 
 
-![](12.png) 
-
-![](13.png)     
-
-
-
 #### Step 4 .  Run the container Prometheus on podman .    
 
-    podman run -d -p 9090:9090 -v /home/himanshu/Desktop/grafana/prometheus.yml:/etc/prometheus/prometheus.yml --name prometheus-container prom/prometheus
-
-
-
-![](14.png)  
+```
+podman run -d -p 9090:9090 -v /home/himanshu/Desktop/grafana/prometheus.yml:/etc/prometheus/prometheus.yml --name prometheus-container prom/prometheus
+```
 
 * **podman run:** This is the command to run a container using Podman, which is an alternative to Docker for managing containers.
 
@@ -287,9 +342,10 @@ If your container is **down**, the first thing you need to do is run the command
 
 ### Step 5 .  Run the container Blackbox Exporter on podman  .    
 
-    podman run -d --name black -p 9115:9115  bitnami/blackbox-exporter:latest     
+```
+podman run -d --name black -p 9115:9115  bitnami/blackbox-exporter:latest     
+```
 
-![](16.png)  
 
 * **podman run:** This is the basic command for running a container with Podman.
 
@@ -316,11 +372,9 @@ If your container is **down**, the first thing you need to do is run the command
 
 #### Step 6 .  Run the container Grafana on podman  .
 
-    podman run -d --name grafana -p 3000:3000 -e "GF_SECURITY_ADMIN_PASSWORD=keenable" grafana/grafana    
-
-
-![](47.png)     
-
+```
+podman run -d --name grafana -p 3000:3000 -e "GF_SECURITY_ADMIN_PASSWORD=keenable" grafana/grafana    
+```
 
 * **podman run:** This is the command to run a container using Podman, a containerization tool similar to Docker.
 
