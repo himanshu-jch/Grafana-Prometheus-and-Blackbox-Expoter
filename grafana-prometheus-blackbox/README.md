@@ -37,27 +37,17 @@
 
     sudo apt update    
 ```
-Preview README.
-libmagickcore-6-h
-Learn more about Ub
-O upgraded, newi
-himanshu@1231-/Deak
-Hit:1 http://in.archive.ubuntu.com/ubuntu jammy InReleaserns a low failure response, th... Get:3 http://in.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
-Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
-Hit:2 https://packages.cloud.google.com/apt kubernetes-xenial InRelease
-Hit:5 http://in.archive.ubuntu.com/ubuntu jammy-backports InRelease
-sudo apt i
-Get:6 http://in.archive.ubuntu.com/ubuntu jammy-proposed InRelease [270 kB]
-Get:7 http://in.archive.ubuntu.com/ubuntu jammy-proposed/universe amd64 Packages [59.7 kB]
-Get:8 http://in.archive.ubuntu.com/ubuntu jammy-proposed/universe 1386 Packages [29.6 kB]
-Get:9 http://in.archive.ubuntu.com/ubuntu jammy-proposed/universe Translation-en [26.8 kB]
-Get:10 http://in.archive.ubuntu.com/ubuntu jammy-proposed/main amd64 Packages [212 kB]
-Get:11 http://in.archive.ubuntu.com/ubuntu jammy-proposed/main i386 Packages [53.1 kB]
-Get:12 http://in.archive.ubuntu.com/ubuntu jammy-proposed/main Translation-en [46.0 kB] Fetched 926 kB in 4s (224 kB/s)36.png)
+himanshu@123:~$ sudo apt update 
+Hit:1 https://dl.google.com/linux/chrome/deb stable InRelease
+Hit:2 http://in.archive.ubuntu.com/ubuntu focal InRelease                                                                                            
+Hit:3 http://security.ubuntu.com/ubuntu focal-security InRelease                         
+Hit:4 http://dell.archive.canonical.com focal InRelease                             
+Get:5 http://in.archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Hit:6 http://in.archive.ubuntu.com/ubuntu focal-backports InRelease
+Fetched 114 kB in 2s (54.2 kB/s)
 Reading package lists... Done
-Building dependency tree... Done
-podman - v
-Reading state information... Done 37.png)
+Building dependency tree       
+Reading state information... Done
 All packages are up to date.
 ```
 
@@ -74,23 +64,14 @@ sudo apt upgrade
 ```
 
 ```
+himanshu@123:~$ sudo apt upgrade 
 Reading package lists... Done
-Building dependency treen.pod Done #### Step 7. If a website's URL returns a low failure response, th...
-Reading state information... Done Step 1. First, we will update and upgrade Calculating upgrade... Done our system and install Podman
-The following package was automatically installed and is no longer required:
-libgtkglext1
-39
-Use 'sudo apt autoremove' to remove it.
-Get more security updates through Ubuntu Pro with 'esm-apps' enabled:
-libmagickcore-6.q16-dev python2.7-minimal libmagickwand-dev imagemagick
-libopenexr-dev libopenexr25 libpostproc55 libmagickcore-dev
-libmagickcore-6.q16-6-extra libavcodec58 libmagickwand-6.q16-6 libpython2.7
-libavutil56 imagemagick-6.q16 libswscale5 libmagickcore-6.q16-6
-libswresample3 imagemagick-6-common libmagickcore-6-arch-config ruby-rack
-libavformat58 python2.7-dev libpython2.7-dev libmagickwand-6-headers
-python2.7 libpython2.7-minimal libmagickwand-6.q16-dev
-libmagickcore-6-headers libpython2.7-stdlib libavfilter7
-Learn more about Ubuntu Pro at https://ubuntu.com/pro
+Building dependency tree       
+Reading state information... Done
+Calculating upgrade... Done
+The following packages were automatically installed and are no longer required:
+  gir1.2-goa-1.0 linux-headers-5.14.0-1051-oem linux-image-5.14.0-1051-oem linux-modules-5.14.0-1051-oem linux-oem-5.14-headers-5.14.0-1051
+Use 'sudo apt autoremove' to remove them.
 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
 ```
 
@@ -104,11 +85,17 @@ Learn more about Ubuntu Pro at https://ubuntu.com/pro
 * **Install Podman** 
 
 ```
-
 sudo apt install podman 
 ```
 
-![](38.png)    
+```
+himanshu@123:~$ sudo apt install podman
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+podman is already the newest version (3.4.4+ds1-1ubuntu1.22.04.2).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+```
 
 * **sudo:** This is a command that stands for "superuser do." It's used to execute the following command with administrative privileges. In other words, it allows you to make system-wide changes and install software.
 
@@ -121,11 +108,9 @@ sudo apt install podman
 * **Check Version**
 
 ```
-
 podman -v
 ```
 ```
-
 podman version 3.4.4
 ```
 
@@ -150,7 +135,6 @@ podman version 3.4.4
 * ```ls``` : **Check List**  
 
 ```
-
 himanshu@123:~/Desktop/grafana$ ls
 config.yml prometheus.yml
 ```
@@ -161,8 +145,14 @@ config.yml prometheus.yml
 sudo apt install vim
 ```
 
-![](40.png)
-
+```
+himanshu@123:~$ sudo apt install vim
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+vim is already the newest version (2:8.2.3995-1ubuntu2.13).
+0 upgraded, 0 newly installed, 0 to remove and 3 not upgraded.
+```
 
 * **sudo:** This part of the command is used to run the following command with superuser privileges. It allows you to make system-wide changes, which are usually restricted to the system administrator.
 
@@ -178,7 +168,21 @@ sudo apt install vim
 vim -v
 ```
 
-![](41.png)      
+```
+VIM - Vi IMproved                                                                                   
+                                                                                                                                                                                      
+                                                                                  version 8.2.1847                                                                                    
+                                                                              by Bram Moolenaar et al.                                                                                
+                                                                       Modified by team+vim@tracker.debian.org                                                                        
+                                                                     Vim is open source and freely distributable                                                                      
+                                                                                                                                                                                      
+                                                                            Help poor children in Uganda!                                                                             
+                                                                   type  :help iccf<Enter>       for information                                                                      
+                                                                                                                                                                                      
+                                                                   type  :q<Enter>               to exit                                                                              
+                                                                   type  :help<Enter>  or  <F1>  for on-line help                                                                     
+                                                                   type  :help version8<Enter>   for version info  
+```
 
 
 * **Vim:** Vim is a powerful and popular text editor that you can use to create and edit text files, code, and various types of documents.
@@ -323,11 +327,19 @@ podman run -d -p 9090:9090 -v /home/himanshu/Desktop/grafana/prometheus.yml:/etc
 
 * ```podman images``` : check images .   
 
-![](17.png)   
+```
+himanshu@123:~/Desktop/grafana$ podman images
+REPOSITORY                           TAG         IMAGE ID      CREATED      SIZE
+docker.io/prom/prometheus            latest      620d5e2a39df  6 days ago   248 MB
+```
 
 * ```podman ps``` : check container .  
 
-![](20.png)   
+```
+himanshu@123:~/Desktop/grafana$ podman ps 
+CONTAINER ID  IMAGE                             COMMAND               CREATED     STATUS            PORTS                   NAMES
+213c8848f5f2  docker.io/prom/prometheus:latest  --config.file=/et...  2 days ago  Up 6 seconds ago  0.0.0.0:9090->9090/tcp  prometheus-container
+```
 
 * show on Localhost : http://localhost:9090/targets?search=   
 
@@ -360,11 +372,20 @@ podman run -d --name black -p 9115:9115  bitnami/blackbox-exporter:latest
 
 * ```podman images``` : check images .   
 
-![](19.png)  
+```
+himanshu@123:~/Desktop/grafana$ podman images
+REPOSITORY                           TAG         IMAGE ID      CREATED      SIZE
+docker.io/bitnami/blackbox-exporter  latest      053fe46060ff  13 days ago  102 MB
+```
 
 * ```podman ps``` : check container .  
 
-![](22.png)  
+
+```
+himanshu@123:~/Desktop/grafana$ podman ps
+CONTAINER ID  IMAGE                                       COMMAND     CREATED     STATUS            PORTS                   NAMES
+19441bbb9427  docker.io/bitnami/blackbox-exporter:latest              2 days ago  Up 5 seconds ago  0.0.0.0:9115->9115/tcp  black
+```
 
 * show on Localhost : http://localhost:9115  
 
@@ -391,13 +412,23 @@ podman run -d --name grafana -p 3000:3000 -e "GF_SECURITY_ADMIN_PASSWORD=keenabl
 
 * ```podman images``` : check images .   
 
-![](18.png)  
+```
+himanshu@123:~/Desktop/grafana$ podman images
+REPOSITORY                           TAG         IMAGE ID      CREATED      SIZE
+docker.io/grafana/grafana            latest      a00c0638216f  7 days ago   407 MB
+```
 
 * ```podman restart <container id>```: **Restart all container**
 
 * ```podman ps``` : check container .  
 
-![](22.png)  
+```
+himanshu@123:~/Desktop/grafana$ podman ps
+CONTAINER ID  IMAGE                                       COMMAND               CREATED     STATUS             PORTS                   NAMES
+213c8848f5f2  docker.io/prom/prometheus:latest            --config.file=/et...  2 days ago  Up 13 minutes ago  0.0.0.0:9090->9090/tcp  prometheus-container
+19441bbb9427  docker.io/bitnami/blackbox-exporter:latest                        2 days ago  Up 13 minutes ago  0.0.0.0:9115->9115/tcp  black
+1eb7cce7d202  docker.io/grafana/grafana:latest                                  2 days ago  Up 14 minutes ago  0.0.0.0:3000->3000/tcp  grafana
+```
 
 * show on Localhost : http://localhost:3000    
 
