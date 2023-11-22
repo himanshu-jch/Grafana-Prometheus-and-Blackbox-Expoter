@@ -169,7 +169,7 @@ vim -v
 ```
 
 ```
-VIM - Vi IMproved                                                                                   
+                                                                                  VIM - Vi IMproved                                                                                   
                                                                                                                                                                                       
                                                                                   version 8.2.1847                                                                                    
                                                                               by Bram Moolenaar et al.                                                                                
